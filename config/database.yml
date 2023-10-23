@@ -22,7 +22,8 @@ default: &default
 development:
   <<: *default
   database: react_rails_one_app_development
-
+  username: postgres
+  password: <%= ENV["RAILS"] %>
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
@@ -56,7 +57,8 @@ development:
 test:
   <<: *default
   database: react_rails_one_app_test
-
+  username: postgres
+  password: <%= ENV["RAILS"] %>
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -80,5 +82,5 @@ test:
 production:
   <<: *default
   database: react_rails_one_app_production
-  username: react_rails_one_app
-  password: <%= ENV["REACT_RAILS_ONE_APP_DATABASE_PASSWORD"] %>
+  username: postgres
+  password: <%= ENV["RAILS"] %>
