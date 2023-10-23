@@ -23,7 +23,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Expence Tracker App <a name="about-project"></a>
+# 📖 Hello Rails React One App <a name="about-project"></a>
 
 In this web application i have implemented a connection between a Ruby on Rails back-end and React front-end in one app..
 
